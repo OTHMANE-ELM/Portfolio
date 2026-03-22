@@ -2,14 +2,9 @@
 
 Portfolio professionnel React + TypeScript + Tailwind CSS + Vite.
 
-## 🚀 Lancement rapide
 
-```bash
-npm install
-npm run dev
-```
 
-Ouvre [http://localhost:5173](http://localhost:5173)
+N'hésitez pas à ouvrir https://portfolio-lm16tjqx1-othmane-elms-projects.vercel.app/
 
 ## 📦 Scripts
 
