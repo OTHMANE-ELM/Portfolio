@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ink-950 text-ink-100 font-body antialiased;
+    background-image: 
+      radial-gradient(ellipse at 20% 50%, rgba(192, 57, 43, 0.04) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 20%, rgba(184, 152, 42, 0.03) 0%, transparent 50%);
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+
+  ::selection {
+    @apply bg-accent/30 text-white;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-ink-950;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-ink-700 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-ink-500;
+  }
+}
+
+@layer components {
+  .underline-link {
+    @apply relative text-ink-200 hover:text-white transition-colors duration-200;
+  }
+
+  .underline-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-px bg-accent transition-all duration-300;
+  }
+
+  .underline-link:hover::after {
+    @apply w-full;
+  }
+
+  .tag-pill {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-sm text-xs font-mono tracking-wide 
+           bg-ink-800 text-ink-300 border border-ink-700;
+  }
+
+  .section-divider {
+    @apply border-t border-ink-800 my-8;
+  }
+
+  .card {
+    @apply bg-ink-900/60 border border-ink-800 rounded-lg p-5 
+           hover:border-ink-600 transition-all duration-300
+           hover:bg-ink-900/80 backdrop-blur-sm;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-5 py-2.5 bg-accent hover:bg-accent-light 
+           text-white font-body font-medium text-sm rounded-sm 
+           transition-all duration-200 tracking-wide;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-5 py-2.5 border border-ink-600 
+           hover:border-ink-400 text-ink-200 hover:text-white font-body font-medium 
+           text-sm rounded-sm transition-all duration-200 tracking-wide;
+  }
+}
+
+/* Animations helpers */
+.animate-delay-100 { animation-delay: 100ms; }
+.animate-delay-200 { animation-delay: 200ms; }
+.animate-delay-300 { animation-delay: 300ms; }
+.animate-delay-400 { animation-delay: 400ms; }
+.animate-delay-500 { animation-delay: 500ms; }
+
+.opacity-0-start {
+  opacity: 0;
+}
