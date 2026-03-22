@@ -6,8 +6,8 @@ export const profile = {
   phone: "+212 771 434 4249",
   email: "metlini80@gmail.com",
   socials: [
-    { label: "GitHub", href: "https://github.com/othmaneelmatlini" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/othmaneelmatlini" },
+    { label: "GitHub", href: "https://github.com/OTHMANE-ELM" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/othmane-e-77461236a/" },
   ],
   about:
     "Étudiant en dernière année de Licence SIR, passionné par le développement full stack avec une spécialisation en Spring Boot et React. Rigoureux, curieux et doté d'une expérience pratique de stage informatique, je suis à la recherche d'un stage PFE pour mettre en pratique mes compétences dans un environnement professionnel.",
